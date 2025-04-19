@@ -1,1 +1,218 @@
+/* Dubyas list of annoying stuff he hides in discord using Quick CSS */
 
+/* Disable emoji inspection upsell (ty Regalia) */
+[class^="nitroTextAndBadge_"], button:has([class^="premiumIcon_"]),
+[class^="emojiSection_"] [class^="flex_"] div[class*="text-sm-normal"]
+{
+    display:none;
+}
+
+/* Disable Popup ads */
+.containerWrapper_fa6aa6,                   /* "Like this avatar decoration" popup on user modal */
+container__9dbd2                            /* Profile effect ad */ {
+    display: none;
+}
+
+/* Hide things in DMs page */
+.channel_c21703 .linkButton_ebd2ba > .link__2e8e1[href="/shop"], /* Hide 'Shop' Tab */
+.channel_c21703 .linkButton_ebd2ba > .link__2e8e1[href="/store"] /* Hide 'Ntiro' Tab */ {
+  display: none;
+}
+
+/* Avatar Decorations */
+svg[class^="avatarDecoration"],             /* Avatar Decorations */
+img[class^="avatarDecoration"],             /* Avatar Decorations in Messages */
+/* Fix 'View Profile' selector with hidden decoration */
+[class*="bannerSVGWrapper_"] > mask > image {
+    display: none;
+}
+[class*=avatarDecorationHint_] > foreignObject {
+  width: 80px;
+  height: 80px;
+  mask: url(#svg-mask-avatar-status-round-80);
+}
+[class*=avatarDecorationHint_] {
+  top: -80px;
+  left: 0px;
+  position: relative;
+}
+
+/* Disable nitro icon on members list hover and opening nitro page */
+/* Some discords have the boosting capitalized, some don't, no clue why. There's probably a cleaner way to do this. */
+div[class*=nameAndDecorators] div[role="button"]:has(svg[aria-label^="Server boosting since"]),
+div[class*=nameAndDecorators] div[role="button"]:has(svg[aria-label^="Server Boosting since"]) {
+    pointer-events: none;
+}
+
+/* Make Super Reactions less annoying (ty Regalia) */
+div[class^="effectsWrapper"] {
+    display: none;
+} 
+img.emoji{
+    opacity: 100;
+}
+div[class*="shakeReaction"] {
+    animation: none !important;
+}
+/* Hide Nitro gift button */
+button[aria-label="Send a gift or Boost this server"] {
+    display: none;
+}
+/* Hide Nitro gift button in DMs */
+button[aria-label="Send a gift"] {
+    display: none;
+}
+/* Hide GIF picker button */
+button[aria-label="Open GIF picker"] {
+    display: none;
+}
+/* Hide sticker picker button */
+button[aria-label="Open sticker picker"] {
+    display: none;
+}
+/* Hide typing indicators toggle button */
+button[aria-label="Enable Typing"] {
+    display: none;
+}
+/* Change home button*/
+.homeIcon-r0w4ny path {fill: transparent}
+.homeIcon-r0w4ny {
+background: url('https://i.pinimg.com/originals/50/1d/8c/501d8c952bf2c8ec791c9f0e7d1ee734.gif') center/cover no-repeat;
+min-width: 60px;
+min-height: 60px;
+}
+/* Remove em profile effects */
+div[class^="profileEffects"] {
+    display: none;
+}
+
+/* Hide shop button in Home */
+a[data-list-item-id*="shop"] { display: none; }
+
+/* Hide Nitro button in Home */
+a[data-list-item-id$="___nitro"] { display: none; }
+/* *[href="/discovery"],  */
+/* *[href="/store"],  */
+/* *[href="/activities"], */
+/* *[href*="/snowsgiving"], */
+/* div[aria-label="Gift Inventory"],  */
+/* div[aria-label="Nitro"],  */
+button[aria-label="Apps"], 
+button[aria-label="Send a gift"], 
+button[aria-label="Open sticker picker"] {
+    display: none;
+}
+/* Hide 'Explore Discoverable Servers'/'Discover' in server page */
+div[class*="listItem"]:has(div[data-list-item-id="guildsnav___guild-discover-button"])
+{
+  display: none;
+}
+
+.visual-refresh {
+    div[class^="subtitleContainer_"],
+    main[class^="container__"] section[class*="container__"] {
+        width: calc(100% - 172px);
+    }
+
+    div[class^="page_"] {
+        &:not(:has(> div[class^="chat_"])) {
+            anchor-name: --vr-header-snippet; 
+        }
+
+        & > div[class^="chat_"] {
+            anchor-name: --vr-header-snippet; 
+        }
+    }
+
+    div[class^="base_"] {
+        grid-template-rows: auto;
+
+        &:has(div[class^="bar_"] > div[class^="trailing_"] > *:nth-child(3)) {
+            & div[class^="subtitleContainer_"],
+            & main[class^="container__"] section[class*="container__"] {
+                width: calc(100% - 216px);
+            }
+        }
+
+        & > div[class^="bar_"] {
+            position: absolute;
+            position-anchor: --vr-header-snippet;
+            top: 0;
+            right: anchor(right);
+            width: anchor-size(width);
+            padding: 0;
+        }
+
+        & div[class^="trailing_"] {
+            background: var(--background-base-lower);
+            border: none;
+            border-bottom: 1px solid var(--border-subtle);
+            height: var(--custom-channel-header-height);
+        }
+    }
+
+    :not(:has(div[class^="page_"] > div[class^="chat_"])) div[class^="base_"] > div[class^="bar_"] {
+        right: 0 !important;
+    }
+
+    ul[data-list-id="guildsnav"] > div[class^="itemsContainer_"] {
+        margin-top: 16px;
+    }
+
+    div[class*="topic__"] {
+        -webkit-app-region: no-drag;
+    }
+}
+
+/* Aligned Chat Box and Typing indicator */
+.container_c48ade {
+  --custom-chat-input-margin-bottom: 22px;
+}
+:root {
+  --custom-channel-textarea-text-area-height: 42px;
+}
+.visual-refresh .base_b88801 {
+  font-size: 13.5px;
+  height: 18px;
+}
+
+.visual-refresh section.panels_c48ade {
+  margin-left: 72px;
+  width: calc(100% - var(--space-xs)*2 - 72px) !important;
+  .actionButtons_e131a9 button {
+    padding: 0;
+  }
+}
+nav.guilds_c48ade {
+  margin-bottom: 0 !important;
+}
+
+[class*='membersGroup']:has([role=button]),
+[class*='member'] [class*='container']:has([class*='badges']) {
+  display: none;
+}
+.theme-midnight {
+    --background-secondary-alt: color-mix(in oklab,var(--neutral-100) 100%,var(--theme-base-color,#000) var(--theme-base-color-amount,0%)) !important;
+    --input-background: color-mix(in oklab,var(--neutral-100) 100%,var(--theme-base-color,#000) var(--theme-base-color-amount,0%)) !important;
+    --background-base-low: color-mix(in oklab,var(--neutral-100) 100%,var(--theme-base-color,#000) var(--theme-base-color-amount,0%)) !important;
+    --background-base-lowest: color-mix(in oklab,var(--neutral-100) 100%,var(--theme-base-color,#000) var(--theme-base-color-amount,0%)) !important;
+    --bg-surface-overlay: color-mix(in oklab,var(--neutral-100) 100%,var(--theme-base-color,#000) var(--theme-base-color-amount,0%)) !important;
+    --chat-background-default: color-mix(in oklab,var(--neutral-100) 100%,var(--theme-base-color,#000) var(--theme-base-color-amount,0%)) !important;
+    --background-base-lower: color-mix(in oklab,var(--neutral-100) 100%,var(--theme-base-color,#000) var(--theme-base-color-amount,0%)) !important;
+}
+
+/* Hide nitro nameplate decorations*/
+[class*="plated"] [style^="background: linear-gradient("] { display: none; }
+
+/* Hide DM Wallpapers */
+div[class*="wallpaperContainer"] {
+    background-image: none !important;
+}
+
+/* Fix image zoom crash */
+.imageWrapper_af017a > a {
+    pointer-events: none;
+}
+
+/* Remove Profile Reactions */
+[class*='container_'] > [class^='popover'], [class*='avatarPopover__']{display:none;}
