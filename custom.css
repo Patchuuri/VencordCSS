@@ -216,3 +216,6 @@ div[class*="wallpaperContainer"] {
 
 /* Remove Profile Reactions */
 [class*='container_'] > [class^='popover'], [class*='avatarPopover__']{display:none;}
+
+/* Hide clan (guild) tags */
+[class*="chipletContainerInner_"]:has([src*="/clan-badges/"]) { display: none; }
