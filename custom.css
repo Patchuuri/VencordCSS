@@ -218,4 +218,7 @@ div[class*="wallpaperContainer"] {
 [class*='container_'] > [class^='popover'], [class*='avatarPopover__']{display:none;}
 
 /* Hide clan (guild) tags */
-.clanTagChiplet_c19a55, .chipletContainerInner__4a25c {display: none}
+span[class*="clanTag_"]
+{
+    display: none;
+}
