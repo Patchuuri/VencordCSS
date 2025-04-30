@@ -209,11 +209,6 @@ div[class*="wallpaperContainer"] {
     background-image: none !important;
 }
 
-/* Fix image zoom crash */
-.imageWrapper_af017a > a {
-    pointer-events: none;
-}
-
 /* Remove Profile Reactions */
 [class*='container_'] > [class^='popover'], [class*='avatarPopover__']{display:none;}
 
