@@ -353,3 +353,17 @@ span[class*="clanTag_"]
 .scroller__36d07 {
   margin-bottom: calc(var(--rscb-clip-chat-through-typing-bar) * (0px - 25px));
 }
+
+/*Don't cover server list with panel*/
+.visual-refresh section.panels_c48ade {
+  left: calc(var(--custom-guild-list-width) + var(--space-xs));
+  width: calc(100% - var(--custom-guild-list-width) - var(--space-xs)*2);
+  box-sizing: content-box;
+
+  .actionButtons_e131a9 button {
+    padding: 0;
+  }
+    }
+nav.guilds_c48ade {
+  margin-bottom: 0 !important;
+}
