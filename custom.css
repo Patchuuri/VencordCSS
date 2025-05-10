@@ -266,3 +266,12 @@ span[class*="clanTag_"]
 nav.guilds_c48ade {
   margin-bottom: 0 !important;
 }
+
+/* Turn animated role colours static */
+[class*=usernameGradient] {
+    background: var(--custom-gradient-color-1);
+    -webkit-background-clip: text;
+    &::after {
+        display: none
+    }
+}
