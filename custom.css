@@ -55,23 +55,23 @@ div[class*="shakeReaction"] {
     animation: none !important;
 }
 /* Hide Nitro gift button */
-button[aria-label="Send a gift or Boost this server"] {
+div[aria-label="Send a gift or Boost this server"] {
     display: none;
 }
 /* Hide Nitro gift button in DMs */
-button[aria-label="Send a gift"] {
+div[aria-label="Send a gift"] {
     display: none;
 }
 /* Hide GIF picker button */
-button[aria-label="Open GIF picker"] {
+div[aria-label="Open GIF picker"] {
     display: none;
 }
 /* Hide sticker picker button */
-button[aria-label="Open sticker picker"] {
+div[aria-label="Open sticker picker"] {
     display: none;
 }
 /* Hide typing indicators toggle button */
-button[aria-label="Enable Typing"] {
+div[aria-label="Enable Typing"] {
     display: none;
 }
 /* Remove em profile effects */
