@@ -125,7 +125,7 @@ div[class*="wallpaperContainer"] {
 }
 
 /* Remove Profile Reactions */
-[class*='container_'] > [class^='popover'], [class*='avatarPopover__']{display:none;}
+[class*='statusPopover'], [class*='avatarPopover__'], [class*='activityPopover__'] {display:none;}
 
 /* Hide clan (guild) tags */
 span[class*="clanTag_"]
