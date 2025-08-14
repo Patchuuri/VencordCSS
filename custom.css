@@ -280,3 +280,6 @@ nav.guilds_c48ade {
 li[class*="channel__"] > div[class*="interactive__"] > div[class*="container__"]:is([class*="fadeIn__"], :has(> div[class*="videoContainer__"])) {
 	display: none;
 }
+
+/*Hide server boost goal bar*/
+.container__0d0f9.containerWithMargin__0d0f9 { display: none !important; }
