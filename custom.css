@@ -275,3 +275,8 @@ nav.guilds_c48ade {
         display: none
     }
 }
+
+/*Hide nameplates in DM list*/
+li[class*="channel__"] > div[class*="interactive__"] > div[class*="container__"]:is([class*="fadeIn__"], :has(> div[class*="videoContainer__"])) {
+	display: none;
+}
