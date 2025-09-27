@@ -283,3 +283,6 @@ li[class*="channel__"] > div[class*="interactive__"] > div[class*="container__"]
 
 /*Hide server boost goal bar*/
 .container__0d0f9.containerWithMargin__0d0f9 { display: none !important; }
+
+/*Hide Add Emoji button*/
+div[class*=emojiPicker] > div[class*=header] > button { display: none; }
