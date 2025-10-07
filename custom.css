@@ -286,3 +286,8 @@ li[class*="channel__"] > div[class*="interactive__"] > div[class*="container__"]
 
 /*Hide Add Emoji button*/
 div[class*=emojiPicker] > div[class*=header] > button { display: none; }
+
+/*Hide Apps button.. again*/
+.button_e6e74f {
+  display: none;
+}
