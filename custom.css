@@ -291,3 +291,8 @@ div[class*=emojiPicker] > div[class*=header] > button { display: none; }
 .button_e6e74f {
   display: none;
 }
+
+/*Hide apps button backup
+div[class^="channelAppLauncher"] {
+    display: none;
+}*/
