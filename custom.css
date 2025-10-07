@@ -54,22 +54,6 @@ img.emoji{
 div[class*="shakeReaction"] {
     animation: none !important;
 }
-/* Hide Nitro gift button */
-[aria-label="Send a gift or Boost this server"] {
-    display: none;
-}
-/* Hide Nitro gift button in DMs */
-[aria-label="Send a gift"] {
-    display: none;
-}
-/* Hide GIF picker button */
-[aria-label="Open GIF picker"] {
-    display: none;
-}
-/* Hide sticker picker button */
-[aria-label="Open sticker picker"] {
-    display: none;
-}
 /* Hide typing indicators toggle button */
 [aria-label="Enable Typing"] {
     display: none;
@@ -287,7 +271,7 @@ li[class*="channel__"] > div[class*="interactive__"] > div[class*="container__"]
 /*Hide Add Emoji button*/
 div[class*=emojiPicker] > div[class*=header] > button { display: none; }
 
-/*Hide Apps button.. again*/
-div[class^="channelAppLauncher"], .button_e6e74f {
+/*Hide every chatbar button OTHER THAN emoji*/
+.buttons__74017 > div:not(:has([class^="emojiButton"])) {
     display: none;
 }
