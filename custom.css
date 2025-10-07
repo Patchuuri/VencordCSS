@@ -288,11 +288,6 @@ li[class*="channel__"] > div[class*="interactive__"] > div[class*="container__"]
 div[class*=emojiPicker] > div[class*=header] > button { display: none; }
 
 /*Hide Apps button.. again*/
-.button_e6e74f {
-  display: none;
-}
-
-/*Hide apps button backup
-div[class^="channelAppLauncher"] {
+div[class^="channelAppLauncher"], .button_e6e74f {
     display: none;
-}*/
+}
