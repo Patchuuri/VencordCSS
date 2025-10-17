@@ -275,3 +275,20 @@ div[class*=emojiPicker] > div[class*=header] > button { display: none; }
 .buttons__74017 > div:not(:has([class^="emojiButton"])) {
     display: none;
 }
+
+/*Hide username fonts*/
+.username_c19a55.dnsFont__89a31 {
+  font-family: var(--font-primary);
+}
+[data-username-with-effects] {
+  animation: none !important;
+  font-family: var(--font-display);
+  color: var(--text-default) !important;
+  -webkit-text-fill-color: unset !important;
+  --custom-display-name-styles-gradient-start-color: var(--text-default);
+  --custom-display-name-styles-gradient-end-color: var(--text-default);
+  --custom-display-name-styles-main-color: var(--text-default);
+  &::before {
+    content: unset !important;
+  }
+}
