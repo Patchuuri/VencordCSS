@@ -295,3 +295,15 @@ div[class*=emojiPicker] > div[class*=header] > button { display: none; }
 
 /*Hide Quests button in DM list*/
 [href="/quest-home"] {display: none}
+
+/* hide menus next to mute and deafen buttons */
+div[class^=micButtonParent__] {
+  button[role="switch"] {
+    border-radius: var(--radius-sm) !important;
+    
+    ~ button {
+      display: none;
+    }
+  }
+}
+
