@@ -8,14 +8,14 @@
 }
 
 /* Disable Popup ads */
-.containerWrapper_fa6aa6,                   /* "Like this avatar decoration" popup on user modal */
-container__9dbd2                            /* Profile effect ad */ {
+.containerWrapper_e18107,                   /* "Like this avatar decoration" popup on user modal */
+container_e18107                            /* Profile effect ad */ {
     display: none;
 }
 
 /* Hide things in DMs page */
-.channel_c21703 .linkButton_ebd2ba > .link__2e8e1[href="/shop"], /* Hide 'Shop' Tab */
-.channel_c21703 .linkButton_ebd2ba > .link__2e8e1[href="/store"] /* Hide 'Ntiro' Tab */ {
+.channel__972a0 .linkButton__972a0 > .link__972a0[href="/shop"], /* Hide 'Shop' Tab */
+.channel__972a0 .linkButton__972a0 > .link__972a0[href="/store"] /* Hide 'Ntiro' Tab */ {
   display: none;
 }
 
@@ -152,7 +152,7 @@ span[class*="clanTag_"]
     }
   }
 
-  div.page_c48ade {
+  div.page__5e434 {
     &:not(:has(> div.chat_f75fb0)) {
       anchor-name: --vr-header-snippet;
     }
@@ -162,7 +162,7 @@ span[class*="clanTag_"]
     }
   }
 
-  div.base_c48ade {
+  div.base__5e434 {
     grid-template-rows: [top] 0 [titleBarEnd] min-content [noticeEnd] 1fr [contentEnd] min-content [end];
 
     &:has(div.bar_c38106 > div.trailing_c38106 .updateIconForeground__49676) {
@@ -180,7 +180,7 @@ span[class*="clanTag_"]
       }
     }
 
-    & > div.content_c48ade {
+    & > div.content__5e434 {
       z-index: 0;
     }
 
@@ -215,8 +215,8 @@ span[class*="clanTag_"]
     }
   }
 
-  :not(:has(div.page_c48ade > div.chat_f75fb0))
-    div.base_c48ade
+  :not(:has(div.page__5e434 > div.chat_f75fb0))
+    div.base__5e434
     > div.bar_c38106 {
     right: 0 !important;
   }
@@ -238,7 +238,7 @@ span[class*="clanTag_"]
 }
 
 /*Don't cover server list with panel*/
-.visual-refresh section.panels_c48ade {
+.visual-refresh section.panels__5e434 {
   left: calc(var(--custom-guild-list-width) + var(--space-xs));
   width: calc(100% - var(--custom-guild-list-width) - var(--space-xs)*2);
   box-sizing: content-box;
@@ -247,7 +247,7 @@ span[class*="clanTag_"]
     padding: 0;
   }
     }
-nav.guilds_c48ade {
+nav.guilds__5e434 {
   margin-bottom: 0 !important;
 }
 
@@ -306,4 +306,3 @@ div[class^=micButtonParent__] {
     }
   }
 }
-
