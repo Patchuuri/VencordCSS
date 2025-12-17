@@ -272,7 +272,7 @@ li[class*="channel__"] > div[class*="interactive__"] > div[class*="container__"]
 div[class*=emojiPicker] > div[class*=header] > button { display: none; }
 
 /*Hide every chatbar button OTHER THAN emoji*/
-._740174f3d6a2c8fe-buttons > div:not(:has([class^="_04eede68d145ae81-spriteContainer"])) {
+[class*="channelTextArea"] [class*="buttons"] > div:not(:has([class*="emojiButton"])) {
     display: none;
 }
 
