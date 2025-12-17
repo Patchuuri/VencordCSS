@@ -20,8 +20,8 @@ container_e18107                            /* Profile effect ad */ {
 }
 
 /* Avatar Decorations */
-svg[class^="avatarDecoration"],             /* Avatar Decorations */
-img[class^="avatarDecoration"],             /* Avatar Decorations in Messages */
+svg[class$="-avatarDecoration"],             /* Avatar Decorations */
+img[class$="-avatarDecoration"],             /* Avatar Decorations in Messages */
 /* Fix 'View Profile' selector with hidden decoration */
 [class*="bannerSVGWrapper_"] > mask > image {
     display: none;
@@ -45,24 +45,27 @@ div[class*=nameAndDecorators] div[role="button"]:has(svg[aria-label^="Server Boo
 }
 
 /* Make Super Reactions less annoying (ty Regalia) */
-div[class^="effectsWrapper"] {
+div[class$="-effectsWrapper"]
+{
     display: none;
 } 
-img.emoji{
+img.emoji
+{
     opacity: 100;
 }
-div[class*="shakeReaction"] {
+div[class$="-shakeReaction"]
+{
     animation: none !important;
 }
 /* Hide typing indicators toggle button */
 [aria-label="Enable Typing"] {
     display: none;
 }
-/* Remove em profile effects */
-[class^="profileEffects"] {
+/* Profile effects */
+[class*="-profileEffects"]
+{
     display: none;
 }
-
 /* Hide shop button in Home */
 a[data-list-item-id*="shop"] { display: none; }
 
@@ -111,8 +114,11 @@ div[class*="wallpaperContainer"] {
 /* Remove Profile Reactions */
 [class*='statusPopover'], [class*='avatarPopover__'], [class*='activityPopover__'] {display:none;}
 
-/* Hide clan (guild) tags */
-span[class*="clanTag_"]
+/* Disable clan tag in messages, memebers list, and popout profile view */
+div[class^=-body] > span[class^="-clickable"] [role="button"],
+div[class*=-compact] span[class*="-clanTagChiplet"], /* (ty SupDos on Github) */
+span[class*="-clanTagChiplet"],
+span[class*="-clanTag"]
 {
     display: none;
 }
@@ -260,9 +266,9 @@ nav._5e434347c823b592-guilds {
     }
 }
 
-/*Hide nameplates in DM list*/
-li[class*="channel__"] > div[class*="interactive__"] > div[class*="container__"]:is([class*="fadeIn__"], :has(> div[class*="videoContainer__"])) {
-	display: none;
+/* Hide nameplates background decoration on members list and DM list (ty Regalia) */
+div[class*="-container"] > div[class$=-videoContainer] {
+    display: none;
 }
 
 /*Hide server boost goal bar*/
