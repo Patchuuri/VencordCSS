@@ -14,8 +14,8 @@ container_e18107                            /* Profile effect ad */ {
 }
 
 /* Hide things in DMs page */
-.channel__972a0 .linkButton__972a0 > .link__972a0[href="/shop"], /* Hide 'Shop' Tab */
-.channel__972a0 .linkButton__972a0 > .link__972a0[href="/store"] /* Hide 'Ntiro' Tab */ {
+._972a0d22c8afa7f0-channel ._972a0d22c8afa7f0-linkButton > ._972a0d22c8afa7f0-link[href="/shop"], /* Hide 'Shop' Tab */
+._972a0d22c8afa7f0-channel ._972a0d22c8afa7f0-linkButton > ._972a0d22c8afa7f0-link[href="/store"] /* Hide 'Ntiro' Tab */ {
   display: none;
 }
 
@@ -127,64 +127,64 @@ span[class*="clanTag_"]
   --vr-header-snippet-space: 230px;
   --vr-header-snippet-button-padding: 0;
 
-  div.chat_f75fb0:not(.threadSidebarOpen_f75fb0) div.subtitleContainer_f75fb0,
-  main.container__133bf,
-  div.chatLayerWrapper__01ae2 {
-    & section.container__9293f {
+  div.f75fb00fb7356cbe-chat:not(.f75fb00fb7356cbe-threadSidebarOpen) div.f75fb00fb7356cbe-subtitleContainer,
+  main._133bf5eea8e33a34-container,
+  div._01ae244280823725-chatLayerWrapper {
+    & section._9293f6b2fc12398a-container {
       padding-right: var(--vr-header-snippet-space);
     }
   }
 
-  div.headerBar__8a7fc.overlay__8a7fc {
+  div._8a7fc664acf53af6-headerBar._8a7fc664acf53af6-overlay {
     padding-right: var(--vr-header-snippet-space);
 
-    & .tab__65d41,
-    & .searchBar__1ac1c {
+    & ._65d410cfafd026bc-tab,
+    & ._1ac1c54c56e5807c-searchBar {
       -webkit-app-region: no-drag;
     }
   }
 
-  div.videoControls_bfe55a div.subtitleContainer__49508 {
+  div.bfe55a0aaaf62375-videoControls div._495084e7a0006942-subtitleContainer {
     padding-right: calc(var(--vr-header-snippet-space) - 20px);
 
-    & .toolbar__9293f {
+    & ._9293f6b2fc12398a-toolbar {
       -webkit-app-region: no-drag;
     }
   }
 
-  div.page__5e434 {
-    &:not(:has(> div.chat_f75fb0)) {
+  div._5e434347c823b592-page {
+    &:not(:has(> div.f75fb00fb7356cbe-chat)) {
       anchor-name: --vr-header-snippet;
     }
 
-    & > div.chat_f75fb0 {
+    & > div.f75fb00fb7356cbe-chat {
       anchor-name: --vr-header-snippet;
     }
   }
 
-  div.base__5e434 {
+  div._5e434347c823b592-base {
     grid-template-rows: [top] 0 [titleBarEnd] min-content [noticeEnd] 1fr [contentEnd] min-content [end];
 
-    &:has(div.bar_c38106 > div.trailing_c38106 .updateIconForeground__49676) {
-      & div.chat_f75fb0,
-      & div.subtitleContainer_f75fb0,
-      & main.container__133bf,
-      & div.chatLayerWrapper__01ae2 {
-        & section.container__9293f {
+    &:has(div.c38106a3f0c3ca76-bar > div.c38106a3f0c3ca76-trailing ._496769951eb140fe-updateIconForeground) {
+      & div.f75fb00fb7356cbe-chat,
+      & div.f75fb00fb7356cbe-subtitleContainer,
+      & main._133bf5eea8e33a34-container,
+      & div._01ae244280823725-chatLayerWrapper {
+        & section._9293f6b2fc12398a-container {
           padding-right: calc(var(--vr-header-snippet-space) + 50px);
         }
       }
 
-      & div.videoControls_bfe55a .topControls_bfe55a div.toolbar__9293f {
+      & div.bfe55a0aaaf62375-videoControls .bfe55a0aaaf62375-topControls div._9293f6b2fc12398a-toolbar {
         margin-right: calc(var(--vr-header-snippet-space) + 30px) !important;
       }
     }
 
-    & > div.content__5e434 {
+    & > div._5e434347c823b592-content {
       z-index: 0;
     }
 
-    & > div.bar_c38106 {
+    & > div.c38106a3f0c3ca76-bar {
       position: absolute;
       position-anchor: --vr-header-snippet;
       top: var(--vr-header-snippet-top);
@@ -192,62 +192,62 @@ span[class*="clanTag_"]
       width: anchor-size(width);
       padding: 0 var(--vr-header-snippet-button-padding) 0 0;
 
-      & > .title_c38106 {
+      & > .c38106a3f0c3ca76-title {
         display: none;
       }
     }
 
-    &:has(> .notice__6e2b9) {
-      & > div.bar_c38106 {
+    &:has(> ._6e2b9359c6f84cfd-notice) {
+      & > div.c38106a3f0c3ca76-bar {
         top: anchor(top);
       }
     }
 
-    & div.trailing_c38106 {
+    & div.c38106a3f0c3ca76-trailing {
       background: none;
       border: none;
       height: var(--custom-channel-header-height);
     }
 
-    &:has(.threadSidebarOpen_f75fb0.threadSidebarFloating_f75fb0)
-      > .bar_c38106 {
+    &:has(.f75fb00fb7356cbe-threadSidebarOpen.f75fb00fb7356cbe-threadSidebarFloating)
+      > .c38106a3f0c3ca76-bar {
       z-index: 0;
     }
   }
 
-  :not(:has(div.page__5e434 > div.chat_f75fb0))
-    div.base__5e434
-    > div.bar_c38106 {
+  :not(:has(div._5e434347c823b592-page > div.f75fb00fb7356cbe-chat))
+    div._5e434347c823b592-base
+    > div.c38106a3f0c3ca76-bar {
     right: 0 !important;
   }
 
-  ul[data-list-id="guildsnav"] > div.itemsContainer_ef3116 > div.stack_dbd263 {
+  ul[data-list-id="guildsnav"] > div.ef3116c2da186559-itemsContainer > div.dbd2630aec71879b-stack {
     margin-top: var(--vr-header-snippet-server-padding);
   }
 
-  section.header__0b563 div.toolbar__9293f,
-  section.header_c791b2 div.toolbar__9293f,
-  section.header_c791b2 div.children__9293f,
-  :not(.videoControls_bfe55a) div.topic__6ec1a {
+  section._0b56311ebc6682e2-header div._9293f6b2fc12398a-toolbar,
+  section.c791b281f2fedc32-header div._9293f6b2fc12398a-toolbar,
+  section.c791b281f2fedc32-header div._9293f6b2fc12398a-children,
+  :not(.bfe55a0aaaf62375-videoControls) div._6ec1a06139ec3b27-topic {
     -webkit-app-region: no-drag;
   }
 
-  .div.videoControls_bfe55a .topControls_bfe55a {
+  .div.bfe55a0aaaf62375-videoControls .bfe55a0aaaf62375-topControls {
     z-index: -1;
   }
 }
 
 /*Don't cover server list with panel*/
-.visual-refresh section.panels__5e434 {
+.visual-refresh section._5e434347c823b592-panels {
   left: calc(var(--custom-guild-list-width) + var(--space-xs));
   width: calc(100% - var(--custom-guild-list-width) - var(--space-xs)*2);
   box-sizing: content-box;
 
-  .actionButtons_e131a9 button {
+  .e131a99484292a19-actionButtons button {
     padding: 0;
   }
     }
-nav.guilds__5e434 {
+nav._5e434347c823b592-guilds {
   margin-bottom: 0 !important;
 }
 
@@ -266,18 +266,18 @@ li[class*="channel__"] > div[class*="interactive__"] > div[class*="container__"]
 }
 
 /*Hide server boost goal bar*/
-.container__0d0f9.containerWithMargin__0d0f9 { display: none !important; }
+._0d0f9ddd12a3ace3-container._0d0f9ddd12a3ace3-containerWithMargin { display: none !important; }
 
 /*Hide Add Emoji button*/
 div[class*=emojiPicker] > div[class*=header] > button { display: none; }
 
 /*Hide every chatbar button OTHER THAN emoji*/
-.buttons__74017 > div:not(:has([class^="emojiButton"])) {
+._740174f3d6a2c8fe-buttons > div:not(:has([class^="_04eede68d145ae81-spriteContainer"])) {
     display: none;
 }
 
 /*Hide username fonts*/
-.username_c19a55.dnsFont__89a31 {
+.c19a557985eb7793-username._89a318b9387eda06-dnsFont {
   font-family: var(--font-primary);
 }
 [data-username-with-effects] {
@@ -295,14 +295,3 @@ div[class*=emojiPicker] > div[class*=header] > button { display: none; }
 
 /*Hide Quests button in DM list*/
 [href="/quest-home"] {display: none}
-
-/* hide menus next to mute and deafen buttons */
-div[class^=micButtonParent__] {
-  button[role="switch"] {
-    border-radius: var(--radius-sm) !important;
-    
-    ~ button {
-      display: none;
-    }
-  }
-}
