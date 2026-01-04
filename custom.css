@@ -301,3 +301,8 @@ div[class*=emojiPicker] > div[class*=header] > button { display: none; }
 
 /*Hide Quests button in DM list*/
 [href="/quest-home"] {display: none}
+
+/* remove "Invite to Voice" suggestion button when connecting to a voice channel */
+[class*='containerDefault'] > [class*='list'] > [class*='animation'] {
+    display: none;
+}
