@@ -244,17 +244,25 @@ span[class*="-clanTag"]
 }
 
 /*Don't cover server list with panel*/
-.visual-refresh section._5e434347c823b592-panels {
+.visual-refresh section[class*="panels"] {
   left: calc(var(--custom-guild-list-width) + var(--space-xs));
   width: calc(100% - var(--custom-guild-list-width) - var(--space-xs)*2);
   box-sizing: content-box;
 
-  .e131a99484292a19-actionButtons button {
-    padding: 0;
+  [class*="buttons"] button {
+    padding: 0px;
   }
-    }
-nav._5e434347c823b592-guilds {
+  
+}
+.visual-refresh nav[class*="guilds"] {
   margin-bottom: 0 !important;
+  mask: 0;
+}
+.visual-refresh div[class*="sidebar"]:after {
+    height: 0 !important;
+}
+.visual-refresh div[class*="unreadMentionsIndicatorBottom"] {
+    padding-bottom: 8px !important;
 }
 
 /* Turn animated role colours static */
