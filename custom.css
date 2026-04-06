@@ -187,3 +187,8 @@ div[class*=emojiPicker] > div[class*=header] > button { display: none; }
 
 /* Align sticker names properly like actually wtf discord do you not know how to work with your own application */
 [class^=clickableSticker] { width: fit-content; }
+
+/* Hide last meadow leaf*/
+div div[aria-label*="Last Meadow Online"] {
+    display: none;
+}
